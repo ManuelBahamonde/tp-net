@@ -6,7 +6,6 @@ namespace Business.logic {
     class AlumnoInscripcion:BusinessEntity{
         String condicion;
         int idAlumno, idCurso, nota;
-
         public string Condicion { get => condicion; set => condicion = value; }
         public int IdAlumno { get => idAlumno; set => idAlumno = value; }
         public int IdCurso { get => idCurso; set => idCurso = value; }
