@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Business.logic {
+namespace Business.Entities {
     class DocenteCurso:BusinessEntity{
         //private TiposCargos cargo; No sabemos donde esta la clase TiposCargos
         int idCurso, idDocente;

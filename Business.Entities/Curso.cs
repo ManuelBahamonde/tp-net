@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Business.logic {
+namespace Business.Entities {
     class Curso:BusinessEntity{
         int anioCalendario, cupo, idComision, idMateria;
         String descripcion;

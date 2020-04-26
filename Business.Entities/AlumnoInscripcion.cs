@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Business.logic {
+namespace Business.Entities {
     class AlumnoInscripcion:BusinessEntity{
         String condicion;
         int idAlumno, idCurso, nota;

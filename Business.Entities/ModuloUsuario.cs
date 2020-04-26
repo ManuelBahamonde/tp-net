@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Business.logic {
+namespace Business.Entities {
     public class ModuloUsuario:Modulo {
         //Declaración de variables
         int idUsuario, idModulo;

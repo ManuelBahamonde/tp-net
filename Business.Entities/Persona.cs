@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Business.logic {
+namespace Business.Entities {
     class Persona:BusinessEntity {
         String nombre,apellido, direccion, email, telefono;
         int idPlan, legajo;
