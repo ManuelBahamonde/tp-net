@@ -81,9 +81,9 @@
       <Project>{9eb66001-d7e8-4c47-b9d7-720e8fb5f370}</Project>
       <Name>Business.Entities</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Logic\Business.Logic.csproj">
-      <Project>{e583b69c-2017-457a-8503-af75c3653efa}</Project>
-      <Name>Business.Logic</Name>
+    <ProjectReference Include="..\Business.logic\Business.logic.csproj">
+      <Project>{072892af-43b6-41cd-be15-82478a1f7019}</Project>
+      <Name>Business.logic</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

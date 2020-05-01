@@ -1,0 +1,9 @@
+G:\Cosas\Manuel\UTN\Tercero\NET\Laboratorios\TP2L03\Data.Database\Data.Database\obj\Debug\Data.Database.csprojAssemblyReference.cache
+G:\Cosas\Manuel\UTN\Tercero\NET\Laboratorios\TP2L03\Data.Database\Data.Database\obj\Debug\Data.Database.csproj.CoreCompileInputs.cache
+G:\Cosas\Manuel\UTN\Tercero\NET\Laboratorios\TP2L03\Data.Database\Data.Database\bin\Debug\Data.Database.dll
+G:\Cosas\Manuel\UTN\Tercero\NET\Laboratorios\TP2L03\Data.Database\Data.Database\bin\Debug\Data.Database.pdb
+G:\Cosas\Manuel\UTN\Tercero\NET\Laboratorios\TP2L03\Data.Database\Data.Database\bin\Debug\Business.Entities.dll
+G:\Cosas\Manuel\UTN\Tercero\NET\Laboratorios\TP2L03\Data.Database\Data.Database\bin\Debug\Business.Entities.pdb
+G:\Cosas\Manuel\UTN\Tercero\NET\Laboratorios\TP2L03\Data.Database\Data.Database\obj\Debug\Data.Database.csproj.CopyComplete
+G:\Cosas\Manuel\UTN\Tercero\NET\Laboratorios\TP2L03\Data.Database\Data.Database\obj\Debug\Data.Database.dll
+G:\Cosas\Manuel\UTN\Tercero\NET\Laboratorios\TP2L03\Data.Database\Data.Database\obj\Debug\Data.Database.pdb

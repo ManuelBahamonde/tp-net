@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "AZ+6iecA5H4QGbcZDOSnny00S3nLxqyinFRxV+2rgAAHNPAMhrhO+615BaDbO3DRzyDHvpdYGeygu8dzXxhRew==",
+  "dgSpecHash": "sMPhTfIREmKVxaBEp+ZRcxjETOvN4th7Ub2fKHhpaWCBNBzCrJdPBUd8gDemfBXRfSeuhpaHXCzpNI6CV2u6fg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Gabriel\\Source\\Repos\\ManuelBahamonde\\tp-net\\Business.logic\\Business.logic.csproj",
+  "projectFilePath": "G:\\Cosas\\Manuel\\UTN\\Tercero\\NET\\Laboratorios\\TP2L03\\Business.logic\\Business.logic.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Gabriel\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Gabriel\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\elpic\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\elpic\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }

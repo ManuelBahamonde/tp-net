@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.Database", "Data.Datab
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business.Logic", "Logic\Business.Logic.csproj", "{E583B69C-2017-457A-8503-AF75C3653EFA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI.Consola", "UI.Consola\UI.Consola.csproj", "{877D3E28-85C2-4A71-9E3C-4E0CE5B1CA07}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{E583B69C-2017-457A-8503-AF75C3653EFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E583B69C-2017-457A-8503-AF75C3653EFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E583B69C-2017-457A-8503-AF75C3653EFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{877D3E28-85C2-4A71-9E3C-4E0CE5B1CA07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{877D3E28-85C2-4A71-9E3C-4E0CE5B1CA07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{877D3E28-85C2-4A71-9E3C-4E0CE5B1CA07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{877D3E28-85C2-4A71-9E3C-4E0CE5B1CA07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
