@@ -61,7 +61,7 @@ namespace Data.Database
 
         public List<Usuario> GetAll()
         {
-            return new List<Usuario>(Usuarios);
+            return Usuarios;
         }
 
         public Business.Entities.Usuario GetOne(int ID)
@@ -74,30 +74,24 @@ namespace Data.Database
             Usuarios.Remove(this.GetOne(ID));
         }
 
-        public void Save(Usuario usuario)
-        {
-            if (usuario.State == BusinessEntity.States.New)
-            {
+        public void Save(Usuario usuario) {
+            if (usuario.State == BusinessEntity.States.New) {
                 int NextID = 0;
-                foreach (Usuario usr in Usuarios)
-                {
-                    if (usr.Id > NextID)
-                    {
+                foreach (Usuario usr in Usuarios) {
+                    if (usr.Id > NextID) {
                         NextID = usr.Id;
                     }
                 }
                 usuario.Id = NextID + 1;
                 Usuarios.Add(usuario);
             }
-            else if (usuario.State == BusinessEntity.States.Deleted)
-            {
+            else if (usuario.State == BusinessEntity.States.Deleted) {
                 this.Delete(usuario.Id);
             }
-            else if (usuario.State == BusinessEntity.States.Modified)
-            {
-                Usuarios[Usuarios.FindIndex(delegate(Usuario u) { return u.Id == usuario.Id; })]=usuario;
+            else if (usuario.State == BusinessEntity.States.Modified) {
+                Usuarios[Usuarios.FindIndex(delegate (Usuario u) { return u.Id == usuario.Id; })] = usuario;
             }
-            usuario.State = BusinessEntity.States.Unmodified;            
+            usuario.State = BusinessEntity.States.Unmodified;
         }
     }
 }

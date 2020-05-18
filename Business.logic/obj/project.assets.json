@@ -218,11 +218,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\Cosas\\Manuel\\UTN\\Tercero\\NET\\Laboratorios\\TP2L03\\Business.logic\\Business.logic.csproj",
+      "projectUniqueName": "G:\\Cosas\\Manuel\\UTN\\Tercero\\NET\\TP2L04\\Business.logic\\Business.logic.csproj",
       "projectName": "Business.logic",
-      "projectPath": "G:\\Cosas\\Manuel\\UTN\\Tercero\\NET\\Laboratorios\\TP2L03\\Business.logic\\Business.logic.csproj",
+      "projectPath": "G:\\Cosas\\Manuel\\UTN\\Tercero\\NET\\TP2L04\\Business.logic\\Business.logic.csproj",
       "packagesPath": "C:\\Users\\elpic\\.nuget\\packages\\",
-      "outputPath": "G:\\Cosas\\Manuel\\UTN\\Tercero\\NET\\Laboratorios\\TP2L03\\Business.logic\\obj\\",
+      "outputPath": "G:\\Cosas\\Manuel\\UTN\\Tercero\\NET\\TP2L04\\Business.logic\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\elpic\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -238,11 +238,11 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "G:\\Cosas\\Manuel\\UTN\\Tercero\\NET\\Laboratorios\\TP2L03\\Business.Entities\\Business.Entities.csproj": {
-              "projectPath": "G:\\Cosas\\Manuel\\UTN\\Tercero\\NET\\Laboratorios\\TP2L03\\Business.Entities\\Business.Entities.csproj"
+            "G:\\Cosas\\Manuel\\UTN\\Tercero\\NET\\TP2L04\\Business.Entities\\Business.Entities.csproj": {
+              "projectPath": "G:\\Cosas\\Manuel\\UTN\\Tercero\\NET\\TP2L04\\Business.Entities\\Business.Entities.csproj"
             },
-            "G:\\Cosas\\Manuel\\UTN\\Tercero\\NET\\Laboratorios\\TP2L03\\Data.Database\\Data.Database\\Data.Database.csproj": {
-              "projectPath": "G:\\Cosas\\Manuel\\UTN\\Tercero\\NET\\Laboratorios\\TP2L03\\Data.Database\\Data.Database\\Data.Database.csproj"
+            "G:\\Cosas\\Manuel\\UTN\\Tercero\\NET\\TP2L04\\Data.Database\\Data.Database\\Data.Database.csproj": {
+              "projectPath": "G:\\Cosas\\Manuel\\UTN\\Tercero\\NET\\TP2L04\\Data.Database\\Data.Database\\Data.Database.csproj"
             }
           }
         }

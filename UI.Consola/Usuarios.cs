@@ -90,7 +90,7 @@ namespace UI.Consola {
             usuarioNegocio.save(usr);
         }
         private void eliminar() {
-            int id = ingresarNumero("Ingrese el ID del usuario a eliminar");
+            int id = ingresarNumero("Ingrese el ID del usuario a modificar");
             usuarioNegocio.delete(id);
         }
 
