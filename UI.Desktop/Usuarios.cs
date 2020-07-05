@@ -75,7 +75,12 @@ namespace UI.Desktop
         public void listar() {
             UsuarioLogic usuarioLogic = new UsuarioLogic();
             dgvUsuarios.DataSource = null;
-            dgvUsuarios.DataSource = usuarioLogic.getAll();
+            try {
+                dgvUsuarios.DataSource = usuarioLogic.getAll();
+            }
+            catch(Exception exc) {
+                DialogResult result = MessageBox.Show(exc.Message, "Error", MessageBoxButtons.OK);
+            }
         }
 
         private void Usuarios_Load(object sender, EventArgs e) {

@@ -77,7 +77,12 @@ namespace UI.Desktop {
         public override void GuardarCambios() {
             MapearADatos();
             UsuarioLogic usuarioLogic = new UsuarioLogic();
-            usuarioLogic.save(UsuarioActual);
+            try {
+                usuarioLogic.save(UsuarioActual);
+            }
+            catch (Exception exc) {
+                DialogResult result = MessageBox.Show(exc.Message, "Error", MessageBoxButtons.OK);
+            }
         }
         public override bool Validar() {
             if(txtUsuario.TextLength > 0 && txtNombre.TextLength > 0 && txtApellido.TextLength > 0 

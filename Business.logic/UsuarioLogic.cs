@@ -17,16 +17,36 @@ namespace Business.logic {
         }
 
         public Usuario getOne(int id) {
-            return usuarioData.GetOne(id);
+            try {
+                return usuarioData.GetOne(id);
+            }
+            catch (Exception exc) {
+                throw;
+            }
         }
         public List<Usuario> getAll() {
-            return usuarioData.GetAll();
+            try {
+                return usuarioData.GetAll();
+            }
+            catch(Exception exc) {
+                throw;
+            }
         }
         public void save(Usuario user) {
-            usuarioData.Save(user);
+            try {
+                usuarioData.Save(user);
+            }
+            catch(Exception exc) {
+                throw;
+            }
         }
         public void delete(int id) {
-            usuarioData.Delete(id);
+            try {
+                usuarioData.Delete(id);
+            }
+            catch (Exception exc) {
+                throw;
+            }
         }
     }
 }
