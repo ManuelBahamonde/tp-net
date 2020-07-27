@@ -82,7 +82,7 @@ namespace UI.Desktop
                 DialogResult result = MessageBox.Show(exc.Message, "Error", MessageBoxButtons.OK);
             }
         }
-
+        
         private void Usuarios_Load(object sender, EventArgs e) {
             listar();
         }

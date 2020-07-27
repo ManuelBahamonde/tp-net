@@ -49,7 +49,7 @@ namespace UI.Desktop {
             else {
                 UsuarioActual.State = BusinessEntity.States.Modified;
             }
-            //UsuarioActual.State = (Modo == ModoForm.Alta ? BusinessEntity.States.New : BusinessEntity.States.Modified);
+            UsuarioActual.State = (Modo == ModoForm.Alta ? BusinessEntity.States.New : BusinessEntity.States.Modified);
         }
         public override void MapearDeDatos() {
             base.MapearDeDatos();
@@ -85,7 +85,8 @@ namespace UI.Desktop {
             }
         }
         public override bool Validar() {
-            if(txtUsuario.TextLength > 0 && txtNombre.TextLength > 0 && txtApellido.TextLength > 0 
+            //String.IsNullOrWhiteSpace(txtUsuario.Text)
+            if (txtUsuario.TextLength > 0 && txtNombre.TextLength > 0 && txtApellido.TextLength > 0 
                 && txtEmail.TextLength > 0 && txtClave.TextLength > 7 && txtClave.Text == txtConfirmarClave.Text ) {
                 return true;
             }

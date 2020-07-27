@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "MZ3g61Z10CoeNWCLqNXbC1C1qfq+EX2ReMuE6Poo+JByBZE7sw9YvbkhAz8Y6d2zJuRTQ4LVYehq9+W2uAaQ/w==",
+  "success": true,
+  "projectFilePath": "G:\\Cosas\\Manuel\\UTN\\Tercero\\NET\\Laboratorios\\TP2L05\\Business.logic\\Business.logic.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\elpic\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\elpic\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

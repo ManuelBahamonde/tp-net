@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Business.Entities;
 
 namespace Data.Database {
-    class EspecialidadAdapter:Adapter {
+    public class EspecialidadAdapter:Adapter {
         public List<Especialidad> GetAll() {
             List<Especialidad> especialidades = new List<Especialidad>();
             try {
@@ -20,14 +20,14 @@ namespace Data.Database {
                     Especialidad esp = new Especialidad();
 
                     esp.Id = (int)drEspecialidades["id_especialidad"];
-                    esp.Descripcion = (String)drEspecialidades["descripcion"];
+                    esp.Descripcion = (String)drEspecialidades["desc_especialidad"];
 
                     especialidades.Add(esp);
                 }
                 drEspecialidades.Close();
             }
             catch (Exception exc) {
-                Exception ExcepcionManejada = new Exception("Error al recuperar lista de especialidades", exc);
+                Exception ExcepcionManejada = new Exception("Error al recuperar lista de especialidades: "+ exc);
                 throw ExcepcionManejada;
             }
             finally {
@@ -42,15 +42,13 @@ namespace Data.Database {
 
             try {
                 this.OpenConnection();
-
                 SqlCommand cmdEspecialidades = new SqlCommand("SELECT * FROM especialidades WHERE id_especialidad = @id", sqlConn);
                 cmdEspecialidades.Parameters.Add("@id", SqlDbType.Int).Value = ID;
-
                 SqlDataReader drEspecialidades = cmdEspecialidades.ExecuteReader();
 
                 if (drEspecialidades.Read()) {
-                    esp.Id = (int)drEspecialidades["id_usuario"];
-                    esp.Descripcion = (String)drEspecialidades["nombre"];
+                    esp.Id = (int)drEspecialidades["id_especialidad"];
+                    esp.Descripcion = (String)drEspecialidades["desc_especialidad"];
                 }
 
                 drEspecialidades.Close();
@@ -74,7 +72,7 @@ namespace Data.Database {
                 cmdDelete.ExecuteNonQuery();
             }
             catch (Exception exc) {
-                throw new Exception("Error al eliminar la especialidad: ", exc);
+                throw new Exception("Error al eliminar la especialidad: "+ exc.Message);
             }
             finally {
                 this.CloseConnection();
@@ -98,14 +96,14 @@ namespace Data.Database {
             try {
                 this.OpenConnection();
 
-                SqlCommand cmdUpdate = new SqlCommand("UPDATE especialidades SET descripcion = @descripcion WHERE id_especialidad = @id", sqlConn);
+                SqlCommand cmdUpdate = new SqlCommand("UPDATE especialidades SET desc_especialidad = @descripcion WHERE id_especialidad = @id", sqlConn);
                 cmdUpdate.Parameters.Add("@id", SqlDbType.Int).Value = especialidad.Id;
                 cmdUpdate.Parameters.Add("@descripcion", SqlDbType.VarChar, 50).Value = especialidad.Descripcion;
 
                 cmdUpdate.ExecuteNonQuery();
             }
             catch (Exception exc) {
-                throw new Exception("Error al modificar datos de la especialidad: ", exc);
+                throw new Exception("Error al modificar datos de la especialidad: "+ exc.Message);
             }
             finally {
                 this.CloseConnection();
@@ -116,13 +114,13 @@ namespace Data.Database {
             try {
                 this.OpenConnection();
 
-                SqlCommand cmdInsert = new SqlCommand("INSERT INTO especialidades(descripcion) VALUES(@descripcion) SELECT @@identity", sqlConn);
+                SqlCommand cmdInsert = new SqlCommand("INSERT INTO especialidades(desc_especialidad) VALUES(@descripcion) SELECT @@identity", sqlConn);
                 cmdInsert.Parameters.Add("@descripcion", SqlDbType.VarChar, 50).Value = especialidad.Descripcion;
 
                 especialidad.Id = Decimal.ToInt32((decimal)cmdInsert.ExecuteScalar());
             }
             catch (Exception exc) {
-                throw new Exception("Error al crear especialidad: ", exc);
+                throw new Exception("Error al crear especialidad: "+ exc.Message);
             }
             finally {
                 this.CloseConnection();
