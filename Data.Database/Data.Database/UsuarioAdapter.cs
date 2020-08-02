@@ -85,7 +85,7 @@ namespace Data.Database
                 drUsuarios.Close();
             }
             catch(Exception exc) {
-                Exception ExcepcionManejada = new Exception("Error al recuperar lista de usuarios", exc);
+                Exception ExcepcionManejada = new Exception("Error al recuperar lista de usuarios" + exc.Message);
                 throw ExcepcionManejada;
             }
             finally {

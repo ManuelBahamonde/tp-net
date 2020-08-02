@@ -4,3 +4,9 @@ G:\Cosas\Manuel\UTN\Tercero\NET\Laboratorios\TP2L05\Business.Entities\obj\Debug\
 G:\Cosas\Manuel\UTN\Tercero\NET\Laboratorios\TP2L05\Business.Entities\obj\Debug\Business.Entities.csproj.CoreCompileInputs.cache
 G:\Cosas\Manuel\UTN\Tercero\NET\Laboratorios\TP2L05\Business.Entities\obj\Debug\Business.Entities.dll
 G:\Cosas\Manuel\UTN\Tercero\NET\Laboratorios\TP2L05\Business.Entities\obj\Debug\Business.Entities.pdb
+C:\Users\Gabriel\Source\Repos\tp-net\Business.Entities\bin\Debug\Business.Entities.dll
+C:\Users\Gabriel\Source\Repos\tp-net\Business.Entities\bin\Debug\Business.Entities.pdb
+C:\Users\Gabriel\Source\Repos\tp-net\Business.Entities\obj\Debug\Business.Entities.csprojAssemblyReference.cache
+C:\Users\Gabriel\Source\Repos\tp-net\Business.Entities\obj\Debug\Business.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel\Source\Repos\tp-net\Business.Entities\obj\Debug\Business.Entities.dll
+C:\Users\Gabriel\Source\Repos\tp-net\Business.Entities\obj\Debug\Business.Entities.pdb

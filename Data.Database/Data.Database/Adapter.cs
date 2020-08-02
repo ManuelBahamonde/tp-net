@@ -9,7 +9,7 @@ namespace Data.Database
 {
     public class Adapter
     {
-        const String consKeyDefaultCnnString = "ConnStringLocal";
+        const String consKeyDefaultCnnString = "ConnStringExpress";
         /*
          * Si estamos trabajando con un MS Sql Server con una instancia sin nombre instalado en la misma PC en la que estamos desarrollando usaremos 
          * ConnStringLocal, en caso que hayamos instalado un Sql Express sin modificar el nombre de instancia usaremos ConnStringExpress y si estamos 

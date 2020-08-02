@@ -12,3 +12,17 @@ G:\Cosas\Manuel\UTN\Tercero\NET\Laboratorios\TP2L05\Business.logic\obj\Debug\net
 G:\Cosas\Manuel\UTN\Tercero\NET\Laboratorios\TP2L05\Business.logic\obj\Debug\netstandard2.0\Business.logic.csproj.CopyComplete
 G:\Cosas\Manuel\UTN\Tercero\NET\Laboratorios\TP2L05\Business.logic\obj\Debug\netstandard2.0\Business.logic.dll
 G:\Cosas\Manuel\UTN\Tercero\NET\Laboratorios\TP2L05\Business.logic\obj\Debug\netstandard2.0\Business.logic.pdb
+C:\Users\Gabriel\Source\Repos\tp-net\Business.logic\bin\Debug\netstandard2.0\Business.logic.deps.json
+C:\Users\Gabriel\Source\Repos\tp-net\Business.logic\bin\Debug\netstandard2.0\Business.logic.dll
+C:\Users\Gabriel\Source\Repos\tp-net\Business.logic\bin\Debug\netstandard2.0\Business.logic.pdb
+C:\Users\Gabriel\Source\Repos\tp-net\Business.logic\bin\Debug\netstandard2.0\Business.Entities.dll
+C:\Users\Gabriel\Source\Repos\tp-net\Business.logic\bin\Debug\netstandard2.0\Data.Database.dll
+C:\Users\Gabriel\Source\Repos\tp-net\Business.logic\bin\Debug\netstandard2.0\Business.Entities.pdb
+C:\Users\Gabriel\Source\Repos\tp-net\Business.logic\bin\Debug\netstandard2.0\Data.Database.pdb
+C:\Users\Gabriel\Source\Repos\tp-net\Business.logic\obj\Debug\netstandard2.0\Business.logic.csprojAssemblyReference.cache
+C:\Users\Gabriel\Source\Repos\tp-net\Business.logic\obj\Debug\netstandard2.0\Business.logic.AssemblyInfoInputs.cache
+C:\Users\Gabriel\Source\Repos\tp-net\Business.logic\obj\Debug\netstandard2.0\Business.logic.AssemblyInfo.cs
+C:\Users\Gabriel\Source\Repos\tp-net\Business.logic\obj\Debug\netstandard2.0\Business.logic.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel\Source\Repos\tp-net\Business.logic\obj\Debug\netstandard2.0\Business.logic.csproj.CopyComplete
+C:\Users\Gabriel\Source\Repos\tp-net\Business.logic\obj\Debug\netstandard2.0\Business.logic.dll
+C:\Users\Gabriel\Source\Repos\tp-net\Business.logic\obj\Debug\netstandard2.0\Business.logic.pdb

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Business.logic;
 
 namespace UI.Desktop{
     public partial class formLogin : Form{
@@ -16,7 +17,7 @@ namespace UI.Desktop{
         }
 
         private void btnIngresar_Click(object sender, EventArgs e) {
-            if(txtUsuario.Text == "Admin" && txtPass.Text == "admin") {
+            if(Validar.Login(txtUsuario.Text, txtPass.Text)) {
                 MessageBox.Show("Usted ha ingresado correctamente", "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.DialogResult = DialogResult.OK;
             }

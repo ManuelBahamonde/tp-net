@@ -32,6 +32,7 @@ namespace Business.logic {
                 throw;
             }
         }
+        
         public void save(Usuario user) {
             try {
                 usuarioData.Save(user);

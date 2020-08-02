@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace Business.Entities {
-    class Plan:BusinessEntity {
+    public class Plan:BusinessEntity {
         private String descripcion;
         private int idEspecialidad;
 
