@@ -37,9 +37,9 @@ namespace UI.Desktop
             this.dgvPlanes.Columns.Add(colDesc);
 
             DataGridViewTextBoxColumn colIdEspecialidad = new DataGridViewTextBoxColumn();
-            colDesc.Name = "id_especialidad";
-            colDesc.HeaderText = "Id Especialidad";
-            colDesc.DataPropertyName = "IdEspecialidad";
+            colIdEspecialidad.Name = "id_especialidad";
+            colIdEspecialidad.HeaderText = "Id Especialidad";
+            colIdEspecialidad.DataPropertyName = "IdEspecialidad";
 //            colDesc.DisplayIndex = 1;
             this.dgvPlanes.Columns.Add(colIdEspecialidad);
         }
@@ -98,6 +98,11 @@ namespace UI.Desktop
         private void Especialidades_Load(object sender, EventArgs e)
         {
             listar();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

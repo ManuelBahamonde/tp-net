@@ -77,5 +77,10 @@ namespace UI.Desktop {
         private void Especialidades_Load(object sender, EventArgs e) {
             listar();
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
