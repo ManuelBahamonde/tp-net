@@ -15,10 +15,18 @@ namespace UI.Desktop
     public partial class PlanDesktop : ApplicationForm
     {
         private Plan planActual;
+        private List<Especialidad> especialidades;
         public PlanDesktop()
         {
+            EspecialidadLogic especialidadLogic = new EspecialidadLogic();
             InitializeComponent();
+            especialidades = especialidadLogic.getAll();
+            foreach (Especialidad esp in especialidades)
+            {
+                cbEspecialidad.Items.Add(esp);
+            }    
         }
+
         public PlanDesktop(ModoForm modo) : this()
         {
             this.Modo = modo;
@@ -43,7 +51,7 @@ namespace UI.Desktop
                 PlanActual = new Plan();
             }
             PlanActual.Descripcion = txtDesc.Text;
-            PlanActual.IdEspecialidad = int.Parse(txtIdEspecialidad.Text);
+            PlanActual.IdEspecialidad = ((Especialidad)cbEspecialidad.SelectedItem).Id;
 
             if (Modo == ModoForm.Alta)
             {
@@ -57,9 +65,10 @@ namespace UI.Desktop
         }
         public override void MapearDeDatos()
         {
+            EspecialidadLogic especialidadLogic = new EspecialidadLogic();
             base.MapearDeDatos();
             txtDesc.Text = PlanActual.Descripcion;
-            txtIdEspecialidad.Text = PlanActual.IdEspecialidad.ToString();
+            cbEspecialidad.SelectedItem = cbEspecialidad.Items[cbEspecialidad.Items.IndexOf(especialidades.Where(e => e.Id == PlanActual.IdEspecialidad))];
 
             switch (Modo)
             {

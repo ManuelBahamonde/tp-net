@@ -7,5 +7,10 @@ namespace Business.Entities {
         String descripcion;
 
         public string Descripcion { get => descripcion; set => descripcion = value; }
+
+        public override String ToString()
+        {
+            return Descripcion;
+        }
     }
 }

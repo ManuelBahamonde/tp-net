@@ -35,7 +35,8 @@
             this.txtId = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtIdEspecialidad = new System.Windows.Forms.TextBox();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.cbEspecialidad = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // btnAceptar
@@ -96,24 +97,25 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(35, 114);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 13);
+            this.label3.Size = new System.Drawing.Size(67, 13);
             this.label3.TabIndex = 13;
-            this.label3.Text = "ID Especialidad";
+            this.label3.Text = "Especialidad";
             // 
-            // txtIdEspecialidad
+            // cbEspecialidad
             // 
-            this.txtIdEspecialidad.Location = new System.Drawing.Point(129, 111);
-            this.txtIdEspecialidad.Name = "txtIdEspecialidad";
-            this.txtIdEspecialidad.Size = new System.Drawing.Size(100, 20);
-            this.txtIdEspecialidad.TabIndex = 12;
+            this.cbEspecialidad.FormattingEnabled = true;
+            this.cbEspecialidad.Location = new System.Drawing.Point(129, 111);
+            this.cbEspecialidad.Name = "cbEspecialidad";
+            this.cbEspecialidad.Size = new System.Drawing.Size(121, 21);
+            this.cbEspecialidad.TabIndex = 16;
             // 
             // PlanDesktop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(410, 203);
+            this.Controls.Add(this.cbEspecialidad);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtIdEspecialidad);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.label2);
@@ -136,6 +138,7 @@
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtIdEspecialidad;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.ComboBox cbEspecialidad;
     }
 }

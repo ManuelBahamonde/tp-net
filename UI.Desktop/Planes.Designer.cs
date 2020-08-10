@@ -71,6 +71,7 @@
             this.tsbEditar.Name = "tsbEditar";
             this.tsbEditar.Size = new System.Drawing.Size(23, 22);
             this.tsbEditar.Text = "toolStripButton2";
+            this.tsbEditar.Click += new System.EventHandler(this.tsbEditar_Click);
             // 
             // tsbEliminar
             // 
@@ -80,6 +81,7 @@
             this.tsbEliminar.Name = "tsbEliminar";
             this.tsbEliminar.Size = new System.Drawing.Size(23, 22);
             this.tsbEliminar.Text = "toolStripButton3";
+            this.tsbEliminar.Click += new System.EventHandler(this.tsbEliminar_Click);
             // 
             // tlUsuarios
             // 
@@ -140,6 +142,7 @@
             this.Controls.Add(this.toolStrip1);
             this.Name = "Planes";
             this.Text = "Plan";
+            this.Load += new System.EventHandler(this.Planes_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.tlUsuarios.ResumeLayout(false);

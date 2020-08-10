@@ -95,7 +95,7 @@ namespace UI.Desktop
             }
         }
 
-        private void Especialidades_Load(object sender, EventArgs e)
+        private void Planes_Load(object sender, EventArgs e)
         {
             listar();
         }

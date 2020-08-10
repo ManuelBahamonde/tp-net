@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace Business.Entities {
-    class Persona:BusinessEntity {
-        String nombre,apellido, direccion, email, telefono;
+    public class Persona : BusinessEntity {
+        String nombre, apellido, direccion, email, telefono;
         int idPlan, legajo;
         DateTime fechaNacimiento;
+        TiposPersonas tipoPersona;
 
         public string Nombre { get => nombre; set => nombre = value; }
         public string Apellido { get => apellido; set => apellido = value; }
@@ -16,6 +17,11 @@ namespace Business.Entities {
         public int IdPlan { get => idPlan; set => idPlan = value; }
         public int Legajo { get => legajo; set => legajo = value; }
         public DateTime FechaNacimiento { get => fechaNacimiento; set => fechaNacimiento = value; }
-        //TiposPersonas tipoPersona; No se donde esta esa clase
+        public TiposPersonas TipoPersona { get => tipoPersona; set => tipoPersona = value; }
+
+        public enum TiposPersonas{
+            admin,
+            user
+        }
     }
 }
