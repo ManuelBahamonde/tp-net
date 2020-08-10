@@ -68,7 +68,9 @@ namespace UI.Desktop
             EspecialidadLogic especialidadLogic = new EspecialidadLogic();
             base.MapearDeDatos();
             txtDesc.Text = PlanActual.Descripcion;
-            cbEspecialidad.SelectedItem = cbEspecialidad.Items[cbEspecialidad.Items.IndexOf(especialidades.Where(e => e.Id == PlanActual.IdEspecialidad))];
+            //cbEspecialidad.SelectedItem = (Especialidad)especialidadLogic.getOne(PlanActual.IdEspecialidad);
+            cbEspecialidad.SelectedIndex = cbEspecialidad.FindStringExact((especialidades.Where(e => e.Id == PlanActual.IdEspecialidad)).ToString());
+                //cbEspecialidad.Items[cbEspecialidad.Items.IndexOf((especialidades.Where(e => e.Id == PlanActual.IdEspecialidad)).ToString())];
 
             switch (Modo)
             {
