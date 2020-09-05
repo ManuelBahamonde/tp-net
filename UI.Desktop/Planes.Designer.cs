@@ -141,7 +141,7 @@
             this.Controls.Add(this.tlUsuarios);
             this.Controls.Add(this.toolStrip1);
             this.Name = "Planes";
-            this.Text = "Plan";
+            this.Text = "Planes";
             this.Load += new System.EventHandler(this.Planes_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();

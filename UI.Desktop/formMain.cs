@@ -43,5 +43,11 @@ namespace UI.Desktop {
             Planes appPlanes = new Planes();
             appPlanes.ShowDialog();
         }
+
+        private void personasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Personas appPersonas = new Personas();
+            appPersonas.ShowDialog();
+        }
     }
 }

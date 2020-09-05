@@ -44,3 +44,5 @@ C:\Users\Gabriel\Source\Repos\tp-net\UI.Desktop\obj\Debug\UI.Desktop.exe
 C:\Users\Gabriel\Source\Repos\tp-net\UI.Desktop\obj\Debug\UI.Desktop.pdb
 C:\Users\Gabriel\Source\Repos\tp-net\UI.Desktop\obj\Debug\UI.Desktop.PlanDesktop.resources
 C:\Users\Gabriel\Source\Repos\tp-net\UI.Desktop\obj\Debug\UI.Desktop.Planes.resources
+C:\Users\Gabriel\Source\Repos\tp-net\UI.Desktop\obj\Debug\UI.Desktop.PersonaDesktop.resources
+C:\Users\Gabriel\Source\Repos\tp-net\UI.Desktop\obj\Debug\UI.Desktop.Personas.resources

@@ -1,6 +1,4 @@
-﻿using Business.Entities;
-using Business.logic;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,68 +7,75 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Business.logic;
+using Business.Entities;
 
 namespace UI.Desktop
 {
-    public partial class PlanDesktop : ApplicationForm
+    public partial class PersonaDesktop : ApplicationForm
     {
-        private Plan planActual;
-        private List<Especialidad> especialidades;
-        public PlanDesktop()
+        private Persona personaActual;
+
+        public PersonaDesktop()
         {
-            EspecialidadLogic especialidadLogic = new EspecialidadLogic();
             InitializeComponent();
-            especialidades = especialidadLogic.getAll();
-            foreach (Especialidad esp in especialidades)
-            {
-                cbEspecialidad.Items.Add(esp);
-            }    
         }
 
-        public PlanDesktop(ModoForm modo) : this()
+        public PersonaDesktop(ModoForm modo) : this()
         {
             this.Modo = modo;
         }
 
-        public Plan PlanActual { get => planActual; set => planActual = value; }
-
-        public PlanDesktop(int idPlan, ModoForm modo) : this()
+        public PersonaDesktop(int idPersona, ModoForm modo) : this()
         {
             this.Modo = modo;
-            PlanesLogic planLogic = new PlanesLogic();
-            PlanActual = planLogic.getOne(idPlan);
+            PersonaLogic personaLogic = new PersonaLogic();
+            PersonaActual = personaLogic.getOne(idPersona);
 
             MapearDeDatos();
-            this.Modo = modo;
         }
+
+        public Persona PersonaActual { get => personaActual; set => personaActual = value; }
 
         public override void MapearADatos()
         {
             if (Modo == ModoForm.Alta)
             {
-                PlanActual = new Plan();
+                PersonaActual = new Persona();
             }
-            PlanActual.Descripcion = txtDesc.Text;
-            PlanActual.IdEspecialidad = ((Especialidad)cbEspecialidad.SelectedItem).Id;
+            PersonaActual.Legajo = int.Parse(txtLegajo.Text);
+            PersonaActual.Nombre = txtNombre.Text;
+            PersonaActual.Apellido = txtApellido.Text;
+            PersonaActual.Email = txtEmail.Text;
+            PersonaActual.Telefono = txtTelefono.Text;
+            PersonaActual.Direccion = txtDireccion.Text;
+            PersonaActual.FechaNacimiento = txtFechaNac.SelectionRange.Start;
+            PersonaActual.IdPlan = int.Parse(txtIdPlan.Text);
 
             if (Modo == ModoForm.Alta)
             {
-                PlanActual.State = BusinessEntity.States.New;
+                PersonaActual.State = BusinessEntity.States.New;
             }
             else
             {
-                PlanActual.State = BusinessEntity.States.Modified;
+                PersonaActual.State = BusinessEntity.States.Modified;
             }
-            PlanActual.State = (Modo == ModoForm.Alta ? BusinessEntity.States.New : BusinessEntity.States.Modified);
+            PersonaActual.State = (Modo == ModoForm.Alta ? BusinessEntity.States.New : BusinessEntity.States.Modified);
         }
         public override void MapearDeDatos()
         {
-            EspecialidadLogic especialidadLogic = new EspecialidadLogic();
             base.MapearDeDatos();
-            txtId.Text = PlanActual.Id.ToString();
-            txtDesc.Text = PlanActual.Descripcion;
-            cbEspecialidad.SelectedItem = (from e in especialidades where e.Id == PlanActual.IdEspecialidad select e).First();
-                
+            txtNombre.Text = PersonaActual.Nombre;
+            txtApellido.Text = PersonaActual.Apellido;
+            txtId.Text = PersonaActual.Id.ToString();
+            txtEmail.Text = PersonaActual.Email;
+            txtLegajo.Text = PersonaActual.Legajo.ToString();
+            txtTelefono.Text = PersonaActual.Telefono;
+            txtDireccion.Text = PersonaActual.Direccion;
+            txtFechaNac.SelectionRange.Start = PersonaActual.FechaNacimiento;
+            txtIdPlan.Text = PersonaActual.IdPlan.ToString();
+
+
             switch (Modo)
             {
                 case ModoForm.Baja:
@@ -84,25 +89,28 @@ namespace UI.Desktop
                     break;
             }
         }
-
         public override void GuardarCambios()
         {
             MapearADatos();
-            PlanesLogic planesLogic = new PlanesLogic();
+            PersonaLogic personaLogic = new PersonaLogic();
             try
             {
-                planesLogic.save(PlanActual);
+                personaLogic.save(PersonaActual);
             }
             catch (Exception exc)
             {
-                DialogResult result = MessageBox.Show(exc.Message, "Error", MessageBoxButtons.OK);
+                DialogResult result = MessageBox.Show(exc.Message, "Error: " + exc.ToString(), MessageBoxButtons.OK);
             }
         }
-
         public override bool Validar()
         {
-            return txtDesc.TextLength > 0;
+            //String.IsNullOrWhiteSpace(txtUsuario.Text)
+            if (txtNombre.TextLength > 0 && txtApellido.TextLength > 0 && txtEmail.TextLength > 0)
+            {
+                return true;
+            }
 
+            return false;
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
@@ -123,7 +131,7 @@ namespace UI.Desktop
             else
             {
                 //Baja: no validamos ni guardamos nada, simplemente borramos
-                new PlanesLogic().delete(PlanActual.Id);
+                new PersonaLogic().delete(PersonaActual.Id);
                 Notificar("Operacion exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 

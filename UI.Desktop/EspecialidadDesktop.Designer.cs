@@ -42,6 +42,7 @@
             // 
             // txtId
             // 
+            this.txtId.Enabled = false;
             this.txtId.Location = new System.Drawing.Point(88, 6);
             this.txtId.Name = "txtId";
             this.txtId.ReadOnly = true;

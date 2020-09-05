@@ -47,6 +47,7 @@ namespace UI.Desktop {
         }
         public override void MapearDeDatos() {
             base.MapearDeDatos();
+            txtId.Text = EspecialidadActual.Id.ToString();
             txtDesc.Text = EspecialidadActual.Descripcion;
 
             switch (Modo) {
