@@ -68,7 +68,7 @@ namespace UI.Desktop
             colEstado.Name = "estado";
             colEstado.HeaderText = "Estado";
             colEstado.DataPropertyName = "State";
-            colEstado.DisplayIndex = 6;
+            colEmail.DisplayIndex = 0;
             this.dgvUsuarios.Columns.Add(colEstado);
         }
 

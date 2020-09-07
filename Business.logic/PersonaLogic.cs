@@ -6,7 +6,7 @@ using Business.Entities;
 
 namespace Business.logic
 {
-    public class PersonaLogic:BusinessLogic
+    class PersonaLogic:BusinessLogic
     {
         PersonaAdapter personaData;
 

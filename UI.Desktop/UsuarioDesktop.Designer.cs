@@ -228,7 +228,6 @@ namespace UI.Desktop {
             // txtId
             // 
             this.txtId.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtId.Enabled = false;
             this.txtId.Location = new System.Drawing.Point(53, 3);
             this.txtId.Name = "txtId";
             this.txtId.ReadOnly = true;
@@ -242,7 +241,7 @@ namespace UI.Desktop {
             this.ClientSize = new System.Drawing.Size(466, 134);
             this.Controls.Add(this.tlpUsuarios);
             this.Name = "UsuarioDesktop";
-            this.Text = "Usuario";
+            this.Text = "Form1";
             this.tlpUsuarios.ResumeLayout(false);
             this.tlpUsuarios.PerformLayout();
             this.ResumeLayout(false);

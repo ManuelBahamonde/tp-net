@@ -77,7 +77,6 @@
             // 
             // txtId
             // 
-            this.txtId.Enabled = false;
             this.txtId.Location = new System.Drawing.Point(129, 23);
             this.txtId.Name = "txtId";
             this.txtId.ReadOnly = true;
@@ -124,7 +123,7 @@
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.label1);
             this.Name = "PlanDesktop";
-            this.Text = "Plan";
+            this.Text = "PlanDesktop";
             this.ResumeLayout(false);
             this.PerformLayout();
 

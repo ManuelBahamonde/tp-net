@@ -10,3 +10,9 @@ C:\Users\Gabriel\Source\Repos\tp-net\Business.Entities\obj\Debug\Business.Entiti
 C:\Users\Gabriel\Source\Repos\tp-net\Business.Entities\obj\Debug\Business.Entities.csproj.CoreCompileInputs.cache
 C:\Users\Gabriel\Source\Repos\tp-net\Business.Entities\obj\Debug\Business.Entities.dll
 C:\Users\Gabriel\Source\Repos\tp-net\Business.Entities\obj\Debug\Business.Entities.pdb
+D:\tp-net\Business.Entities\bin\Debug\Business.Entities.dll
+D:\tp-net\Business.Entities\bin\Debug\Business.Entities.pdb
+D:\tp-net\Business.Entities\obj\Debug\Business.Entities.csprojAssemblyReference.cache
+D:\tp-net\Business.Entities\obj\Debug\Business.Entities.csproj.CoreCompileInputs.cache
+D:\tp-net\Business.Entities\obj\Debug\Business.Entities.dll
+D:\tp-net\Business.Entities\obj\Debug\Business.Entities.pdb

@@ -176,7 +176,7 @@ namespace Data.Database
                 cmdInsert.Parameters.Add("@direccion", SqlDbType.VarChar, 50).Value = persona.Direccion;
                 cmdInsert.Parameters.Add("@telefono", SqlDbType.VarChar, 50).Value = persona.Telefono;
                 cmdInsert.Parameters.Add("@idplan", SqlDbType.Int).Value = persona.IdPlan;
-                cmdInsert.Parameters.Add("@fechanac", SqlDbType.DateTime).Value = persona.FechaNacimiento;
+                cmdInsert.Parameters.Add("@fachanac", SqlDbType.DateTime).Value = persona.FechaNacimiento;
                 cmdInsert.Parameters.Add("@legajo", SqlDbType.Int).Value = persona.Legajo;
                 cmdInsert.Parameters.Add("@tipopersona", SqlDbType.Int).Value = persona.TipoPersona;
 
@@ -184,7 +184,7 @@ namespace Data.Database
             }
             catch (Exception exc)
             {
-                throw new Exception("Error al crear persona: " + exc.Message);
+                throw new Exception("Error al crear persona: ", exc);
             }
             finally
             {

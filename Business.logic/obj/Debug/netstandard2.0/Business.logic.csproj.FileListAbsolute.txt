@@ -26,3 +26,17 @@ C:\Users\Gabriel\Source\Repos\tp-net\Business.logic\obj\Debug\netstandard2.0\Bus
 C:\Users\Gabriel\Source\Repos\tp-net\Business.logic\obj\Debug\netstandard2.0\Business.logic.csproj.CopyComplete
 C:\Users\Gabriel\Source\Repos\tp-net\Business.logic\obj\Debug\netstandard2.0\Business.logic.dll
 C:\Users\Gabriel\Source\Repos\tp-net\Business.logic\obj\Debug\netstandard2.0\Business.logic.pdb
+D:\tp-net\Business.logic\bin\Debug\netstandard2.0\Business.logic.deps.json
+D:\tp-net\Business.logic\bin\Debug\netstandard2.0\Business.logic.dll
+D:\tp-net\Business.logic\bin\Debug\netstandard2.0\Business.logic.pdb
+D:\tp-net\Business.logic\bin\Debug\netstandard2.0\Business.Entities.dll
+D:\tp-net\Business.logic\bin\Debug\netstandard2.0\Data.Database.dll
+D:\tp-net\Business.logic\bin\Debug\netstandard2.0\Business.Entities.pdb
+D:\tp-net\Business.logic\bin\Debug\netstandard2.0\Data.Database.pdb
+D:\tp-net\Business.logic\obj\Debug\netstandard2.0\Business.logic.csprojAssemblyReference.cache
+D:\tp-net\Business.logic\obj\Debug\netstandard2.0\Business.logic.csproj.CoreCompileInputs.cache
+D:\tp-net\Business.logic\obj\Debug\netstandard2.0\Business.logic.AssemblyInfoInputs.cache
+D:\tp-net\Business.logic\obj\Debug\netstandard2.0\Business.logic.AssemblyInfo.cs
+D:\tp-net\Business.logic\obj\Debug\netstandard2.0\Business.logic.csproj.CopyComplete
+D:\tp-net\Business.logic\obj\Debug\netstandard2.0\Business.logic.dll
+D:\tp-net\Business.logic\obj\Debug\netstandard2.0\Business.logic.pdb
