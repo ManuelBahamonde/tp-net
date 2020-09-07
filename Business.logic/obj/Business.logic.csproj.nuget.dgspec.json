@@ -1,30 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gabriel\\Source\\Repos\\tp-net\\Business.logic\\Business.logic.csproj": {}
+    "D:\\tp-net\\Business.logic\\Business.logic.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gabriel\\Source\\Repos\\tp-net\\Business.Entities\\Business.Entities.csproj": {
+    "D:\\tp-net\\Business.Entities\\Business.Entities.csproj": {
+      "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gabriel\\Source\\Repos\\tp-net\\Business.Entities\\Business.Entities.csproj",
+        "projectUniqueName": "D:\\tp-net\\Business.Entities\\Business.Entities.csproj",
         "projectName": "Business.Entities",
-        "projectPath": "C:\\Users\\Gabriel\\Source\\Repos\\tp-net\\Business.Entities\\Business.Entities.csproj"
+        "projectPath": "D:\\tp-net\\Business.Entities\\Business.Entities.csproj"
       },
       "frameworks": {
         "net472": {}
       }
     },
-    "C:\\Users\\Gabriel\\Source\\Repos\\tp-net\\Business.logic\\Business.logic.csproj": {
+    "D:\\tp-net\\Business.logic\\Business.logic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gabriel\\Source\\Repos\\tp-net\\Business.logic\\Business.logic.csproj",
+        "projectUniqueName": "D:\\tp-net\\Business.logic\\Business.logic.csproj",
         "projectName": "Business.logic",
-        "projectPath": "C:\\Users\\Gabriel\\Source\\Repos\\tp-net\\Business.logic\\Business.logic.csproj",
-        "packagesPath": "C:\\Users\\Gabriel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gabriel\\Source\\Repos\\tp-net\\Business.logic\\obj\\",
+        "projectPath": "D:\\tp-net\\Business.logic\\Business.logic.csproj",
+        "packagesPath": "C:\\Users\\elpic\\.nuget\\packages\\",
+        "outputPath": "D:\\tp-net\\Business.logic\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Gabriel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\elpic\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -37,11 +38,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\Gabriel\\Source\\Repos\\tp-net\\Business.Entities\\Business.Entities.csproj": {
-                "projectPath": "C:\\Users\\Gabriel\\Source\\Repos\\tp-net\\Business.Entities\\Business.Entities.csproj"
+              "D:\\tp-net\\Business.Entities\\Business.Entities.csproj": {
+                "projectPath": "D:\\tp-net\\Business.Entities\\Business.Entities.csproj"
               },
-              "C:\\Users\\Gabriel\\Source\\Repos\\tp-net\\Data.Database\\Data.Database\\Data.Database.csproj": {
-                "projectPath": "C:\\Users\\Gabriel\\Source\\Repos\\tp-net\\Data.Database\\Data.Database\\Data.Database.csproj"
+              "D:\\tp-net\\Data.Database\\Data.Database\\Data.Database.csproj": {
+                "projectPath": "D:\\tp-net\\Data.Database\\Data.Database\\Data.Database.csproj"
               }
             }
           }
@@ -72,20 +73,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Gabriel\\Source\\Repos\\tp-net\\Data.Database\\Data.Database\\Data.Database.csproj": {
+    "D:\\tp-net\\Data.Database\\Data.Database\\Data.Database.csproj": {
+      "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gabriel\\Source\\Repos\\tp-net\\Data.Database\\Data.Database\\Data.Database.csproj",
+        "projectUniqueName": "D:\\tp-net\\Data.Database\\Data.Database\\Data.Database.csproj",
         "projectName": "Data.Database",
-        "projectPath": "C:\\Users\\Gabriel\\Source\\Repos\\tp-net\\Data.Database\\Data.Database\\Data.Database.csproj",
+        "projectPath": "D:\\tp-net\\Data.Database\\Data.Database\\Data.Database.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "C:\\Users\\Gabriel\\Source\\Repos\\tp-net\\Business.Entities\\Business.Entities.csproj": {
-                "projectPath": "C:\\Users\\Gabriel\\Source\\Repos\\tp-net\\Business.Entities\\Business.Entities.csproj"
+              "D:\\tp-net\\Business.Entities\\Business.Entities.csproj": {
+                "projectPath": "D:\\tp-net\\Business.Entities\\Business.Entities.csproj"
               }
             }
           }
