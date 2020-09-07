@@ -104,7 +104,7 @@ namespace Data.Database
             }
             catch (Exception exc)
             {
-                throw new Exception("Error al eliminar la persona: " + exc);
+                throw new Exception("Error al eliminar la persona: " + exc.Message);
             }
             finally
             {
@@ -136,7 +136,7 @@ namespace Data.Database
                 this.OpenConnection();
 
                 SqlCommand cmdUpdate = new SqlCommand("UPDATE personas SET direccion = @direccion, id_plan = @idplan, telefono = @telefono" +
-                    ",nombre = @nombre,apellido = @apellido,email = @email, fecha_nacimiento = @fechanac, legajo = @legajo," +
+                    ",nombre = @nombre,apellido = @apellido,email = @email, fecha_nac = @fechanac, legajo = @legajo," +
                     "tipo_persona = @tipopersona WHERE id_persona = @id", sqlConn);
                 cmdUpdate.Parameters.Add("@id", SqlDbType.Int).Value = persona.Id;
                 cmdUpdate.Parameters.Add("@nombre", SqlDbType.VarChar, 50).Value = persona.Nombre;
@@ -145,7 +145,7 @@ namespace Data.Database
                 cmdUpdate.Parameters.Add("@direccion", SqlDbType.VarChar, 50).Value = persona.Direccion;
                 cmdUpdate.Parameters.Add("@telefono", SqlDbType.VarChar, 50).Value = persona.Telefono;
                 cmdUpdate.Parameters.Add("@idplan", SqlDbType.Int).Value = persona.IdPlan;
-                cmdUpdate.Parameters.Add("@fachanac", SqlDbType.DateTime).Value = persona.FechaNacimiento;
+                cmdUpdate.Parameters.Add("@fechanac", SqlDbType.DateTime).Value = persona.FechaNacimiento;
                 cmdUpdate.Parameters.Add("@legajo", SqlDbType.Int).Value = persona.Legajo;
                 cmdUpdate.Parameters.Add("@tipopersona", SqlDbType.Int).Value = persona.TipoPersona;
 
@@ -153,7 +153,7 @@ namespace Data.Database
             }
             catch (Exception exc)
             {
-                throw new Exception("Error al modificar datos de la persona: ", exc);
+                throw new Exception("Error al modificar datos de la persona: " + exc.Message);
             }
             finally
             {
@@ -176,7 +176,7 @@ namespace Data.Database
                 cmdInsert.Parameters.Add("@direccion", SqlDbType.VarChar, 50).Value = persona.Direccion;
                 cmdInsert.Parameters.Add("@telefono", SqlDbType.VarChar, 50).Value = persona.Telefono;
                 cmdInsert.Parameters.Add("@idplan", SqlDbType.Int).Value = persona.IdPlan;
-                cmdInsert.Parameters.Add("@fachanac", SqlDbType.DateTime).Value = persona.FechaNacimiento;
+                cmdInsert.Parameters.Add("@fechanac", SqlDbType.DateTime).Value = persona.FechaNacimiento;
                 cmdInsert.Parameters.Add("@legajo", SqlDbType.Int).Value = persona.Legajo;
                 cmdInsert.Parameters.Add("@tipopersona", SqlDbType.Int).Value = persona.TipoPersona;
 
@@ -184,7 +184,7 @@ namespace Data.Database
             }
             catch (Exception exc)
             {
-                throw new Exception("Error al crear persona: ", exc);
+                throw new Exception("Error al crear persona: " + exc.Message);
             }
             finally
             {
