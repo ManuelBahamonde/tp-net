@@ -9,5 +9,9 @@ namespace Business.Entities {
 
         public string Descripcion { get => descripcion; set => descripcion = value; }
         public int IdEspecialidad { get => idEspecialidad; set => idEspecialidad = value; }
+
+        public override String ToString() {
+            return Descripcion;
+        }
     }
 }

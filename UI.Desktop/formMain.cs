@@ -44,6 +44,12 @@ namespace UI.Desktop {
             appPlanes.ShowDialog();
         }
 
+        private void comisionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Comisiones appComisiones = new Comisiones();
+            appComisiones.ShowDialog();
+        }
+
         private void personasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Personas appPersonas = new Personas();

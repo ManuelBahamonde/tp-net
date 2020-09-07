@@ -132,6 +132,7 @@
             this.btnActualizar.TabIndex = 1;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // Planes
             // 
@@ -141,7 +142,7 @@
             this.Controls.Add(this.tlUsuarios);
             this.Controls.Add(this.toolStrip1);
             this.Name = "Planes";
-            this.Text = "Planes";
+            this.Text = "Plan";
             this.Load += new System.EventHandler(this.Planes_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
