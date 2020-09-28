@@ -43,6 +43,8 @@ namespace UI.Desktop {
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.txtId = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtIdPersona = new System.Windows.Forms.TextBox();
             this.tlpUsuarios.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,67 +69,70 @@ namespace UI.Desktop {
             this.tlpUsuarios.Controls.Add(this.label5, 2, 1);
             this.tlpUsuarios.Controls.Add(this.label6, 2, 2);
             this.tlpUsuarios.Controls.Add(this.label7, 2, 3);
-            this.tlpUsuarios.Controls.Add(this.btnCancelar, 3, 4);
-            this.tlpUsuarios.Controls.Add(this.btnAceptar, 2, 4);
+            this.tlpUsuarios.Controls.Add(this.btnCancelar, 3, 5);
+            this.tlpUsuarios.Controls.Add(this.btnAceptar, 2, 5);
             this.tlpUsuarios.Controls.Add(this.txtId, 1, 0);
+            this.tlpUsuarios.Controls.Add(this.label8, 0, 4);
+            this.tlpUsuarios.Controls.Add(this.txtIdPersona, 1, 4);
             this.tlpUsuarios.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlpUsuarios.Location = new System.Drawing.Point(0, 0);
             this.tlpUsuarios.Name = "tlpUsuarios";
-            this.tlpUsuarios.RowCount = 5;
+            this.tlpUsuarios.RowCount = 6;
             this.tlpUsuarios.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tlpUsuarios.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tlpUsuarios.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tlpUsuarios.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tlpUsuarios.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tlpUsuarios.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tlpUsuarios.Size = new System.Drawing.Size(466, 134);
+            this.tlpUsuarios.Size = new System.Drawing.Size(467, 154);
             this.tlpUsuarios.TabIndex = 0;
             // 
             // txtConfirmarClave
             // 
             this.txtConfirmarClave.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtConfirmarClave.Location = new System.Drawing.Point(304, 81);
+            this.txtConfirmarClave.Location = new System.Drawing.Point(311, 81);
             this.txtConfirmarClave.Name = "txtConfirmarClave";
-            this.txtConfirmarClave.Size = new System.Drawing.Size(159, 20);
+            this.txtConfirmarClave.Size = new System.Drawing.Size(153, 20);
             this.txtConfirmarClave.TabIndex = 17;
             // 
             // txtClave
             // 
             this.txtClave.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtClave.Location = new System.Drawing.Point(53, 81);
+            this.txtClave.Location = new System.Drawing.Point(67, 81);
             this.txtClave.Name = "txtClave";
-            this.txtClave.Size = new System.Drawing.Size(159, 20);
+            this.txtClave.Size = new System.Drawing.Size(152, 20);
             this.txtClave.TabIndex = 16;
             // 
             // txtUsuario
             // 
             this.txtUsuario.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtUsuario.Location = new System.Drawing.Point(304, 55);
+            this.txtUsuario.Location = new System.Drawing.Point(311, 55);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(159, 20);
+            this.txtUsuario.Size = new System.Drawing.Size(153, 20);
             this.txtUsuario.TabIndex = 15;
             // 
             // txtEmail
             // 
             this.txtEmail.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtEmail.Location = new System.Drawing.Point(53, 55);
+            this.txtEmail.Location = new System.Drawing.Point(67, 55);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(159, 20);
+            this.txtEmail.Size = new System.Drawing.Size(152, 20);
             this.txtEmail.TabIndex = 14;
             // 
             // txtApellido
             // 
             this.txtApellido.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtApellido.Location = new System.Drawing.Point(304, 29);
+            this.txtApellido.Location = new System.Drawing.Point(311, 29);
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(159, 20);
+            this.txtApellido.Size = new System.Drawing.Size(153, 20);
             this.txtApellido.TabIndex = 13;
             // 
             // txtNombre
             // 
             this.txtNombre.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtNombre.Location = new System.Drawing.Point(53, 29);
+            this.txtNombre.Location = new System.Drawing.Point(67, 29);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(159, 20);
+            this.txtNombre.Size = new System.Drawing.Size(152, 20);
             this.txtNombre.TabIndex = 12;
             // 
             // label1
@@ -169,7 +174,7 @@ namespace UI.Desktop {
             // chkHabilitado
             // 
             this.chkHabilitado.AutoSize = true;
-            this.chkHabilitado.Location = new System.Drawing.Point(218, 3);
+            this.chkHabilitado.Location = new System.Drawing.Point(225, 3);
             this.chkHabilitado.Name = "chkHabilitado";
             this.chkHabilitado.Size = new System.Drawing.Size(73, 17);
             this.chkHabilitado.TabIndex = 7;
@@ -179,7 +184,7 @@ namespace UI.Desktop {
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(218, 26);
+            this.label5.Location = new System.Drawing.Point(225, 26);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(44, 13);
             this.label5.TabIndex = 4;
@@ -188,7 +193,7 @@ namespace UI.Desktop {
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(218, 52);
+            this.label6.Location = new System.Drawing.Point(225, 52);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(43, 13);
             this.label6.TabIndex = 5;
@@ -197,7 +202,7 @@ namespace UI.Desktop {
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(218, 78);
+            this.label7.Location = new System.Drawing.Point(225, 78);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(80, 13);
             this.label7.TabIndex = 6;
@@ -206,9 +211,9 @@ namespace UI.Desktop {
             // btnCancelar
             // 
             this.btnCancelar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCancelar.Location = new System.Drawing.Point(304, 107);
+            this.btnCancelar.Location = new System.Drawing.Point(311, 127);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(159, 21);
+            this.btnCancelar.Size = new System.Drawing.Size(153, 21);
             this.btnCancelar.TabIndex = 9;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -217,7 +222,7 @@ namespace UI.Desktop {
             // btnAceptar
             // 
             this.btnAceptar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAceptar.Location = new System.Drawing.Point(218, 107);
+            this.btnAceptar.Location = new System.Drawing.Point(225, 127);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(80, 21);
             this.btnAceptar.TabIndex = 8;
@@ -228,17 +233,33 @@ namespace UI.Desktop {
             // txtId
             // 
             this.txtId.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtId.Location = new System.Drawing.Point(53, 3);
+            this.txtId.Location = new System.Drawing.Point(67, 3);
             this.txtId.Name = "txtId";
             this.txtId.ReadOnly = true;
-            this.txtId.Size = new System.Drawing.Size(159, 20);
+            this.txtId.Size = new System.Drawing.Size(152, 20);
             this.txtId.TabIndex = 10;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(3, 104);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(58, 13);
+            this.label8.TabIndex = 18;
+            this.label8.Text = "Id Persona";
+            // 
+            // txtIdPersona
+            // 
+            this.txtIdPersona.Location = new System.Drawing.Point(67, 107);
+            this.txtIdPersona.Name = "txtIdPersona";
+            this.txtIdPersona.Size = new System.Drawing.Size(83, 20);
+            this.txtIdPersona.TabIndex = 19;
             // 
             // UsuarioDesktop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(466, 134);
+            this.ClientSize = new System.Drawing.Size(467, 154);
             this.Controls.Add(this.tlpUsuarios);
             this.Name = "UsuarioDesktop";
             this.Text = "Form1";
@@ -268,5 +289,7 @@ namespace UI.Desktop {
         private Button btnCancelar;
         private Button btnAceptar;
         private TextBox txtId;
+        private Label label8;
+        private TextBox txtIdPersona;
     }
 }

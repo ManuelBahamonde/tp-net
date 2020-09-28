@@ -14,6 +14,15 @@ namespace UI.Desktop {
     public partial class formMain : Form {
         public formMain() {
             InitializeComponent();
+        }
+
+        public void adminMode()
+        {
+
+        }
+
+        public void userMode()
+        {
 
         }
 

@@ -42,6 +42,7 @@ namespace UI.Desktop {
             UsuarioActual.Habilitado = chkHabilitado.Checked;
             UsuarioActual.NombreUsuario = txtUsuario.Text;
             UsuarioActual.Clave = txtClave.Text;
+            UsuarioActual.IdPersona = int.Parse(txtIdPersona.Text);
 
             if(Modo == ModoForm.Alta) {
                 UsuarioActual.State = BusinessEntity.States.New;
@@ -61,6 +62,7 @@ namespace UI.Desktop {
             txtClave.Text = UsuarioActual.Clave;
             txtConfirmarClave.Text = UsuarioActual.Clave;
             chkHabilitado.Checked = UsuarioActual.Habilitado;
+            txtIdPersona.Text = UsuarioActual.IdPersona.ToString();
 
             switch (Modo) {
                 case ModoForm.Baja:

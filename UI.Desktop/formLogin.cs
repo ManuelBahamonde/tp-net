@@ -17,7 +17,8 @@ namespace UI.Desktop{
         }
 
         private void btnIngresar_Click(object sender, EventArgs e) {
-            if(Validar.Login(txtUsuario.Text, txtPass.Text)) {
+            Business.Entities.Usuario usuario = Validar.Login(txtUsuario.Text, txtPass.Text);
+            if (usuario != null) {
                 MessageBox.Show("Usted ha ingresado correctamente", "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.DialogResult = DialogResult.OK;
             }

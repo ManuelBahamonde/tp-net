@@ -11,7 +11,7 @@ namespace Business.logic {
             return true;
         }
 
-        public static bool Login(String user, String pass)
+        public static Usuario Login(String user, String pass)
         {
             UsuarioLogic usuarioLogic = new UsuarioLogic();
             List<Usuario> usuarios = usuarioLogic.getAll();
@@ -19,10 +19,10 @@ namespace Business.logic {
             {
                 if(usuario.NombreUsuario == user && usuario.Clave == pass)
                 {
-                    return true;
+                    return usuario;
                 }
             }
-            return false;
+            return null;
         }
     }
 
